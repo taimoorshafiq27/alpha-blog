@@ -43,3 +43,23 @@ create about.html.erb file in pages dir
 add about action to pagescontroller file
 create about page in Pages dir
 add route to routes.rb
+
+--OPTIONAL--
+create heroku account to deploy app
+install heroku CLI tools
+log in with heroku CLI
+to create heroku app $ heroku create
+edit gemfile to cut sqlite3 and paste it into development, test block (sqlite3 good for development, not for production)
+then add production block. heroku works with pg (ruby interface to the PostgreSQL db that heroku works with)
+
+group :production do
+  gem 'pg'
+end
+
+$ bundle install --without production
+
+$ git add -A
+$ git commit -m "Make app production ready"
+$ git push heroku main
+
+rename heroku app in CLI
