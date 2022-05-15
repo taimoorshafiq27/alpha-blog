@@ -29,3 +29,17 @@ git is initialised when app is created
 $ git add -A
 $ git commit -m "Initial commit and add root route"
 create github repo and link with git using $ git remote add origin <url>
+
+ROOT ROUTE
+create pages dir in View dir
+create home.html.erb file which will be the homepage i.e. root page
+create pages_controller.rb file in Controllers dir
+add home action to pagescontroller file
+edit root route in /config/routes.rb
+root <'controller#action'>
+
+ABOUT PAGE
+create about.html.erb file in pages dir
+add about action to pagescontroller file
+create about page in Pages dir
+add route to routes.rb
